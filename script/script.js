@@ -29,10 +29,15 @@ function myFunction() {
     //         pers2 + ' '+ dias2 + 'dias ' + ppd*dias2 + '€<br>' +
     //         ((ppd*dias1) + (ppd*dias2)) + '€';
 
-    text =  'precio/pers/dia = ' + Math.round(( (ppd) + Number.EPSILON) * 100) / 100 + '€<br>' +
-            pers1 + ' '+ dias1 + 'dias ' + Math.round(( (ppd*dias1) + Number.EPSILON) * 100) / 100 + '€<br>' +
-            pers2 + ' '+ dias2 + 'dias ' + Math.round(( (ppd*dias2) + Number.EPSILON) * 100) / 100 + '€<br>' +
-            Math.round(( ((ppd*dias1) + (ppd*dias2)) + Number.EPSILON) * 100) / 100 + '€';
+    let ppdRound = Math.round(( (ppd) + Number.EPSILON) * 100) / 100;
+    p1 = Math.round(( (ppd*dias1) + Number.EPSILON) * 100) / 100;
+    p2 = Math.round(( (ppd*dias2) + Number.EPSILON) * 100) / 100;
+    tot  = Math.round(( ((ppd*dias1) + (ppd*dias2)) + Number.EPSILON) * 100) / 100;
+
+    text =  'precio/pers/dia = ' + ppdRound + '€<br>' +
+            pers1 + ' '+ dias1 + 'dias ' + p1 + '€<br>' +
+            pers2 + ' '+ dias2 + 'dias ' + p2 + '€<br>' +
+            tot + '€';
 
     document.getElementById("demo").innerHTML = text;
   }
