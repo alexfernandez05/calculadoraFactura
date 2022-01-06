@@ -1,81 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Calculadora Factura</title>
-    <script src="script/script.js"></script>
-    <script></script>
-  </head>
-  <body>
-    <!-- <h2>JavaScript Validation</h2> -->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- <p>Please input a number between 1 and 10:</p> -->
-    <div class="container mt-5">
-      <form>
-        <div class="row">
-          <div class="col">
-            Importe Factura: <input id="total" value="43.89"  type="text" class="form-control" placeholder="TOTAL FACTURA">
-          </div>
-          <div class="col">
-            Dias factura: <input id="diasFactura" value="63" type="text" class="form-control" placeholder="DIAS FACTURA">
-          </div>
+  <title>Calculadora Factura</title>
+  <script src="script/script.js"></script>
+  <script></script>
+</head>
+
+<body>
+  <!-- <h2>JavaScript Validation</h2> -->
+
+  <!-- <p>Please input a number between 1 and 10:</p> -->
+  <div class="container mt-5">
+    <form>
+      <div class="row">
+        <div class="col">
+          Importe Factura: <input id="total" value="43.89" type="text" class="form-control" placeholder="TOTAL FACTURA">
         </div>
-
-        <div class="row mt-3">
-          <div class="col">
-            Persona 1:<input id="pers1" value="Debora " type="text" class="form-control" placeholder="Persona 1">
-          </div>
-          <div class="col">
-            Dias persona 1:<input id="dias1" value="63" type="text" class="form-control" placeholder="Dias persona 1">
-          </div>
+        <div class="col">
+          Dias factura: <input id="diasFactura" value="63" type="text" class="form-control" placeholder="DIAS FACTURA">
         </div>
-
-        <div class="row mt-3">
-          <div class="col">
-            Persona 2:<input id="pers2" value="Tania " type="text" class="form-control" placeholder="Persona 2">
-          </div>
-          <div class="col">
-            Dias persona 2:<input id="dias2" value="14" type="text" class="form-control" placeholder="Dias persona 2">
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="col">
-            <button class="btn btn-primary" type="button" onclick="myFunction()">Submit</button>
-          </div>
-        </div>
-
-
-      </form>
-
-      <div class="container mt-3">
-        <p id="demo"></p>
       </div>
 
-      <!-- total €<input id="total" value="43.89" ><input id="diasFactura" value="63">dias<br>
+      <div class="row mt-3">
+        <div class="col">
+          Persona 1:<input id="pers1" value="Debora " type="text" class="form-control" placeholder="Persona 1">
+        </div>
+        <div class="col">
+          Dias persona 1:<input id="dias1" value="63" type="text" class="form-control" placeholder="Dias persona 1">
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          Persona 2:<input id="pers2" value="Rodo " type="text" class="form-control" placeholder="Persona 2">
+        </div>
+        <div class="col">
+          Dias persona 2:<input id="dias2" value="14" type="text" class="form-control" placeholder="Dias persona 2">
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          Persona 3:<input id="pers3" value="Tania " type="text" class="form-control" placeholder="Persona 3">
+        </div>
+        <div class="col">
+          Dias persona 3:<input id="dias3" value="14" type="text" class="form-control" placeholder="Dias persona 3">
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          Persona 4:<input id="pers4" value="Jordi " type="text" class="form-control" placeholder="Persona 4">
+        </div>
+        <div class="col">
+          Dias persona 4:<input id="dias4" value="14" type="text" class="form-control" placeholder="Dias persona 4">
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col">
+          <button class="btn btn-primary" type="button" onclick="myFunction()">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="container mt-3">
+      <p id="demo"></p>
+    </div>
+
+    <!-- total €<input id="total" value="43.89" ><input id="diasFactura" value="63">dias<br>
       pers1<input id="pers1" value="debora" ><input id="dias1" value="49" >dias<br>
       pers2<input id="pers2" value="tania" ><input id="dias2" value="14" >dias<br> -->
-      
-      <!-- <button class="btn btn-primary" type="button" onclick="myFunction()">Submit</button> -->
-      
-      
-    </div>
-    
+
+    <!-- <button class="btn btn-primary" type="button" onclick="myFunction()">Submit</button> -->
+
+
+  </div>
 
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
