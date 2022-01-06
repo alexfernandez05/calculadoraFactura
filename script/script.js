@@ -11,8 +11,8 @@ function myFunction() {
 
         let dias1 = document.getElementById("dias1").value;
         let dias2 = document.getElementById("dias2").value;
-        let dias2 = document.getElementById("dias3").value;
-        let dias2 = document.getElementById("dias4").value;
+        let dias3 = document.getElementById("dias3").value;
+        let dias4 = document.getElementById("dias4").value;
 
         //let diasxpers = parseInt(dias1 - dias2) + (dias2 * 2);
         let diasxpers = parseInt(dias1 + dias2 + dias3 + dias4);
