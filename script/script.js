@@ -2,8 +2,6 @@ function myFunction() {
         let total = document.getElementById("total").value;
         let diasFactura = document.getElementById("diasFactura").value;
 
-        let text;
-
         let pers1 = document.getElementById("pers1").value;
         let pers2 = document.getElementById("pers2").value;
         let pers3 = document.getElementById("pers3").value;
@@ -15,7 +13,7 @@ function myFunction() {
         let dias4 = document.getElementById("dias4").value;
 
         //let diasxpers = parseInt(dias1 - dias2) + (dias2 * 2);
-        let diasxpers = parseInt(dias1 + dias2 + dias3 + dias4);
+        let diasxpers = parseInt(dias1) + parseInt(dias2) + parseInt(dias3) + parseInt(dias4);
         let ppd = (total / diasxpers);  //Precio x persona día
 
         let ppdRound = Math.round(((ppd) + Number.EPSILON) * 100) / 100;
@@ -28,6 +26,7 @@ function myFunction() {
         //tot = Math.round((((ppd * dias1) + (ppd * dias2)) + Number.EPSILON) * 100) / 100;
         tot = Math.round((((ppd * dias1) + (ppd * dias2) + (ppd * dias3) + (ppd * dias4)) + Number.EPSILON) * 100) / 100;
 
+        let text;
         text = 'precio/pers/dia = ' + ppdRound + '€<br>' +
                 pers1 + ' ' + dias1 + 'dias ' + p1 + '€<br>' +
                 pers2 + ' ' + dias2 + 'dias ' + p2 + '€<br>' +
